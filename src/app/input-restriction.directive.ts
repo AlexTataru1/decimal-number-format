@@ -4,7 +4,7 @@ import {Directive, Input, HostListener} from '@angular/core';
   selector: '[inputPattern]'
 })
 export class InputRestrictionDirective {
-  @Input('inputrestriction') InputRestriction: string;
+  @Input('inputPattern') InputRestriction: string;
   constructor() {
   }
 
