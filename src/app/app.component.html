@@ -1,0 +1,19 @@
+<div [formGroup]="form">
+  <div>
+    <span>Numbers with decimals input pattern: </span>
+    <input formControlName="decimalInputCurrency"
+           inputPattern="^[-+]?\d*$"
+           [value]="form.get('decimalInputCurrency')?.value | decimalFormat">
+  </div>
+
+  <div>
+    <span>Letters only input pattern: </span>
+    <input formControlName="letterOnlyInput"
+           inputPattern="[a-zA-Z]"
+           [value]="form.get('letterOnlyInput')?.value">
+  </div>
+
+
+  <button (click)="click()">Console log output</button>
+</div>
+
